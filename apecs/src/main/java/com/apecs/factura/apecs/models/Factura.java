@@ -13,7 +13,7 @@ public class Factura {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id_secretaria;
+    private Integer Id_factura;
 
     private Date fecha;
 
@@ -23,12 +23,14 @@ public class Factura {
         this.fecha = fecha;
         this.total = total;
     }
-    public Factura(){}
-    public Integer getId_secretaria() {
-        return Id_secretaria;
+    public Factura(){
+
     }
-    public void setId_secretaria(Integer id_secretaria) {
-        Id_secretaria = id_secretaria;
+    public Integer getId_factura() {
+        return Id_factura;
+    }
+    public void setId_factura(Integer id_factura) {
+        Id_factura = id_factura;
     }
     public Date getFecha() {
         return fecha;
@@ -42,6 +44,9 @@ public class Factura {
     public void setTotal(boolean total) {
         this.total = total;
     }
+    
+    
 
+   
     
 }
