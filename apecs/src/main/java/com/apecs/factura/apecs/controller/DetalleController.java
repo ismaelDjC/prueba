@@ -23,17 +23,17 @@ public class DetalleController {
 		return repository.findAll();
 	}
 
-	@PostMapping("/inventory")
+	@PostMapping("/detalle")
 	public Detalle create(@Validated @RequestBody Detalle l) {
 		return repository.save(l);
 	}
 
-	@PutMapping("/inventory/{id}")
+	@PutMapping("/detalle/{id}")
 	public Detalle update(@PathVariable Integer id, @Validated @RequestBody Detalle l) {
 		return repository.save(l);
 	}
 
-	@DeleteMapping("/inventory/{id}")
+	@DeleteMapping("/detalle/{id}")
 	public void delete(@PathVariable Integer id) {
 		repository.deleteById(id);
 	}
